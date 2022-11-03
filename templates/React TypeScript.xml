@@ -1,0 +1,89 @@
+<templateSet group="React TypeScript">
+  <template name="rcfc" value="import React from 'react';&#10;&#10;interface Props {&#10;}&#10;&#10;export const $TM_FILENAME_BASE$: React.FunctionComponent&lt;Props&gt; = ({}) =&gt; {&#10;  return (&#10;    &lt;&gt;{}&lt;/&gt;&#10;  );&#10;};" description="Creates a React Stateless Functional Component" toReformat="true" toShortenFQNames="true">
+    <variable name="TM_FILENAME_BASE" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="psc" value="const $STYLED_PRIMITIVE$ = styled.$PRIMITIVE$`&#10;&#10;`;" description="Creates a styled component (primitive)" toReformat="false" toShortenFQNames="true">
+    <variable name="PRIMITIVE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STYLED_PRIMITIVE" expression="concat(&quot;Styled&quot;, capitalize(PRIMITIVE))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="usee" value="useEffect(() =&gt; {&#10;&#10;return (): void =&gt; {&#10;&#10;};&#10;}, []);" description="empty useEffect" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="test" value="describe('', () =&gt; {&#10;  test('=', () =&gt; {&#10;&#10;    expect()&#10;  });&#10;});" description="Writes a simple test" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ut" value="const { t } = useTranslation();" description="get t from useTranslation" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="rcsvg" value="import { BaseSvgProps } from 'components/svg/svg-props';&#10;import React from 'react';&#10;&#10;export const $TM_FILENAME_BASE$: React.FunctionComponent&lt;BaseSvgProps&gt; = ({width, height}) =&gt;" description="Creates a React SVG component" toReformat="true" toShortenFQNames="true">
+    <variable name="TM_FILENAME_BASE" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="rcnc" value="import React from 'react';&#10;&#10;export const $TM_FILENAME_BASE$: React.FunctionComponent = () =&gt; {&#10;  return (&#10;    &lt;&gt;{}&lt;/&gt;&#10;  );&#10;};" description="Creates a React Stateless Functional Component without any props" toReformat="true" toShortenFQNames="true">
+    <variable name="TM_FILENAME_BASE" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="pwhite" value="${(props) =&gt; props.theme.palette.color.black}" description="Get white color from theme" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="pmq" value="${(props) =&gt; props.theme.mediaQueries.desktop} {&#10;  &#10;}" description="Media query" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="sc" value="const Styled$COMPONENT$ = styled($COMPONENT$)`&#10;&#10;`;" description="Creates a styled component" toReformat="false" toShortenFQNames="true">
+    <variable name="COMPONENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptrans" value="transition: background-color ${(props): string =&gt; props.theme.transition};" description="Transition" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="pstyle" value=" ${(props) =&gt; props.theme.styles.};" description="Styles" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="rcnp" value="import type { NextPage } from 'next'&#10;&#10;const $TM_FILENAME_BASE$: NextPage = () =&gt; {&#10;  return (&#10;    &lt;&gt;{}&lt;/&gt;&#10;  );&#10;};&#10;&#10;export default $TM_FILENAME_BASE$" description="Creates a NextJS page" toReformat="true" toShortenFQNames="true">
+    <variable name="TM_FILENAME_BASE" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ur" value="const { query } = useRouter();" description="get query from useRouter" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
