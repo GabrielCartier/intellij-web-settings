@@ -110,5 +110,8 @@
   <template name="ndi" value="const $COMPONENT_NAME$ = dynamic(() =&gt; import('$IMPORT_PATH$'), {})" description="NextJS dynamic import" toReformat="false" toShortenFQNames="true">
     <variable name="COMPONENT_NAME" expression="complete()" defaultValue="" alwaysStopAt="true" />
     <variable name="IMPORT_PATH" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
   </template>
 </templateSet>
