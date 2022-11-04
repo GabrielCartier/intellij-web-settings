@@ -114,4 +114,10 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="nur" value="const router = useRouter();" description="get router from useRouter" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
